@@ -1,0 +1,10 @@
+height, width = map(int,input().split()) #行総数、列総数
+sheet = [] #行列
+for h in range(height):
+  sheet.append(list(map(int,input().split())))
+
+crossSum = [] #行列の合計値を入れた行列
+
+#行ごとの合計値リストを作成
+#列ごとの合計値リストを作成
+#行0列0から順に（行合計+列合計-クロスしている場所の値）を出力していく
