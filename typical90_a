@@ -1,0 +1,16 @@
+### Input ###
+cutPointCount, totalLength = map(int,input().split()) #切れ目の数、羊羹の長さ
+selectCount = int(input()) #実際に入れる切れ目の数
+cutPointList = list(map(int,input().split())) #切れ目の場所リスト
+
+#等分する場合がスコア最大？
+equalCutLength = totalLength/(selectCount+1) #等分した際の長さ
+
+#等分する位置と一番近い切れ目を探しだしてリストを作る
+#作ったリストでi番目とi+1番目の切れ目の距離を計算してリストを作る
+#リストのmin()が答え
+
+###
+
+
+### Output ###
